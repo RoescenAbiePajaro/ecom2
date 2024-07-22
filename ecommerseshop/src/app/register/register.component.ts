@@ -1,10 +1,10 @@
-import { Component, Type } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
-import {User} from '/interfaces/auth';
-import { AuthService } from '/services/auth.service';
-import { passwordMatchValidator } from 'src/app/shared/password-match.directive';
+import { User } from '../interfaces/auth';
+import { AuthService } from '../services/auth.service';
+import { passwordMatchValidator } from '../shared/password-match.directive';
 
 @Component({
   selector: 'app-register',
